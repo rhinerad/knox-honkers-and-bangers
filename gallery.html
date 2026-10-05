@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gallery · Knoxville Honkers and Bangers</title>
+<meta name="description" content="Photos and videos of the Knoxville Honkers and Bangers out on the street.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Archivo:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="wrap top">
+  <a class="mark" href="index.html"><span class="mark-dot" aria-hidden="true"></span>Honkers &amp; Bangers</a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="shows.html">Shows</a></li>
+      <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="index.html#join">Join</a></li>
+      <li><a href="index.html#book">Book Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap page-head">
+    <p class="kicker">Photos &amp; videos</p>
+    <h1>Gallery</h1>
+    <p class="lede">Shots from the street. Parades, Pride, picnics and parties.</p>
+    <div class="filters" role="group" aria-label="Show">
+      <button class="pill" type="button" data-filter="all" aria-pressed="true">All · 12</button>
+      <button class="pill" type="button" data-filter="photo" aria-pressed="false">Photos · 8</button>
+      <button class="pill" type="button" data-filter="video" aria-pressed="false">Videos · 4</button>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:clamp(56px,8vw,96px)">
+    <!--
+      HOW TO ADD A REAL PHOTO
+        1. Upload the picture into the images/ folder (e.g. images/soknopride-2026.jpg).
+        2. In a tile below, replace everything inside <div class="tile-media ..."> ... </div> with:
+             <img src="images/soknopride-2026.jpg" alt="The band marching down Sevier Ave at SoKno Pride">
+      HOW TO ADD A VIDEO
+        Upload the clip (MP4, keep it short) to images/ and use:
+             <video src="images/clip.mp4" controls playsinline preload="metadata"></video>
+        Or link out to Instagram/YouTube by wrapping the tile in <a href="...">.
+      The r-45 / r-11 / r-32 / r-169 / r-916 class sets the tile shape (4:5, square, 3:2, 16:9, 9:16).
+    -->
+    <div class="masonry" id="gallery-grid">
+      <figure class="tile video" data-kind="video">
+        <div class="tile-media r-169"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#FF2E97" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5l5.5 3.5-5.5 3.5z"/></svg><span class="ph">[VIDEO]</span></div>
+        <figcaption><b>Dolly Parade, marching in</b><span>Sep 4, 2026 · City County Building</span></figcaption>
+      </figure>
+      <figure class="tile photo" data-kind="photo">
+        <div class="tile-media r-45"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FFC83D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="ph">[PHOTO]</span></div>
+        <figcaption><b>SoKno Pride</b><span>Jun 20, 2026 · Sevier Ave</span></figcaption>
+      </figure>
+      <figure class="tile photo" data-kind="photo">
+        <div class="tile-media r-11"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FFC83D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="ph">[PHOTO]</span></div>
+        <figcaption><b>KMA Puppet Parade</b><span>Jul 11, 2026 · Knoxville Museum of Art</span></figcaption>
+      </figure>
+      <figure class="tile photo" data-kind="photo">
+        <div class="tile-media r-45"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FFC83D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="ph">[PHOTO]</span></div>
+        <figcaption><b>Blount County Pride</b><span>Sep 12, 2026 · Springbrook Park, Alcoa</span></figcaption>
+      </figure>
+      <figure class="tile video" data-kind="video">
+        <div class="tile-media r-916"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#FF2E97" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5l5.5 3.5-5.5 3.5z"/></svg><span class="ph">[VIDEO]</span></div>
+        <figcaption><b>Marching down Sevier Ave to Hi-Wire</b><span>Jun 20, 2026 · SoKno Pride</span></figcaption>
+      </figure>
+      <figure class="tile photo" data-kind="photo">
+        <div class="tile-media r-32"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FFC83D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="ph">[PHOTO]</span></div>
+        <figcaption><b>Cattywampus Parade</b><span>May 17, 2026 · Suttree Landing Park</span></figcaption>
+      </figure>
+      <figure class="tile photo" data-kind="photo">
+        <div class="tile-media r-11"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FFC83D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="ph">[PHOTO]</span></div>
+        <figcaption><b>Sweetwater Pride</b><span>Jun 6, 2026 · Duck Park, Sweetwater</span></figcaption>
+      </figure>
+      <figure class="tile video" data-kind="video">
+        <div class="tile-media r-169"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#FF2E97" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5l5.5 3.5-5.5 3.5z"/></svg><span class="ph">[VIDEO]</span></div>
+        <figcaption><b>Bail Fund Kickoff Party set</b><span>May 22, 2026 · Birdhouse Neighborhood Center</span></figcaption>
+      </figure>
+      <figure class="tile photo" data-kind="photo">
+        <div class="tile-media r-45"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FFC83D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="ph">[PHOTO]</span></div>
+        <figcaption><b>Outlandish Fest</b><span>May 2, 2026 · Ijams Nature Center</span></figcaption>
+      </figure>
+      <figure class="tile photo" data-kind="photo">
+        <div class="tile-media r-32"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FFC83D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="ph">[PHOTO]</span></div>
+        <figcaption><b>Labor Day picnic for United Campus Workers</b><span>Sep 7, 2026 · Tyson Park</span></figcaption>
+      </figure>
+      <figure class="tile video" data-kind="video">
+        <div class="tile-media r-169"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#FF2E97" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5l5.5 3.5-5.5 3.5z"/></svg><span class="ph">[VIDEO]</span></div>
+        <figcaption><b>Freedom Thighs, under the interstate</b><span>Jul 4, 2026 · Washington Ave</span></figcaption>
+      </figure>
+      <figure class="tile photo" data-kind="photo">
+        <div class="tile-media r-45"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FFC83D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="ph">[PHOTO]</span></div>
+        <figcaption><b>Dolly Parade lineup</b><span>Sep 4, 2026 · City County Building</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec sec-pink">
+    <div class="wrap send">
+      <div>
+        <p class="eyebrow">Were you there?</p>
+        <h2>Send us your shots</h2>
+        <p style="margin:0;font-weight:600">Got photos or video from a show? Email them over or tag us on Instagram and we might put them up here.</p>
+      </div>
+      <div class="send-contacts">
+        <span>knoxhonkersandbangers@gmail.com</span>
+        <span>[YOUR INSTAGRAM HANDLE]</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <b>Knoxville Honkers and Bangers</b>
+      <p>Knoxville, Tennessee · the Scruffy City</p>
+    </div>
+    <p>Part of the worldwide HONK! street band movement.</p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('[data-filter]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var f = btn.dataset.filter;
+    document.querySelectorAll('[data-filter]').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+    document.querySelectorAll('#gallery-grid .tile').forEach(function (t) { t.hidden = f !== 'all' && t.dataset.kind !== f; });
+  });
+});
+</script>
+</body>
+</html>
