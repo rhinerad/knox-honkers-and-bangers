@@ -46,6 +46,7 @@ window.KHB_ARCHIVE = {
     { date: '2025-04-12', title: 'Rossini Festival', place: 'Market Square', note: '' },
     { date: '2025-04-26', title: 'Art Struck Festival', place: 'Johnson City', note: '' },
     { date: '2025-05-18', title: 'Cattywampus Parade', place: 'Suttree Landing Park', note: '' },
+    { date: '2025-05-28', title: 'SoKno Pride', place: '', note: '' },
     { date: '2025-05-31', title: 'Mushroom Festival', place: 'Everything Mushrooms', note: '' },
     { date: '2025-06-07', title: "Appalshop's Seedtime on the Cumberland", place: "Wiley's Last Resort", note: '' },
     { date: '2025-06-12', end: '2025-06-15', title: 'Bonnaroo', place: 'Manchester, TN', note: 'Led a puppet parade through the festival' },
