@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Past Shows · Knoxville Honkers and Bangers</title>
+<meta name="description" content="Every show the Knoxville Honkers and Bangers have played since 2023.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Archivo:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="wrap top">
+  <a class="mark" href="index.html"><span class="mark-dot" aria-hidden="true"></span>Honkers &amp; Bangers</a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="shows.html">Shows</a></li>
+      <li><a href="past-shows.html" aria-current="page">Past Shows</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="index.html#join">Join</a></li>
+      <li><a href="index.html#book">Book Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap page-head">
+    <p class="kicker">The road so far</p>
+    <h1>Past Shows</h1>
+    <p class="lede">Every parade, Pride, picnic and party we've played since we started marching.</p>
+    <ul class="ps-stats">
+      <li><b id="ps-total">–</b><span>Shows played</span></li>
+      <li><b id="ps-since">–</b><span>First show</span></li>
+      <li><b id="ps-years">–</b><span>Seasons</span></li>
+    </ul>
+  </section>
+
+  <section class="sec sec-surface" aria-labelledby="per-year-h">
+    <div class="wrap">
+      <p class="eyebrow">Shows per year</p>
+      <h2 id="per-year-h" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Shows per year</h2>
+      <div class="ps-chart" id="ps-chart"></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap" id="ps-list"></div>
+  </section>
+
+  <section class="sec sec-pink">
+    <div class="wrap cta-band">
+      <div>
+        <p class="eyebrow">Want to be on this list?</p>
+        <h2>Book the band</h2>
+      </div>
+      <div class="ctas">
+        <a class="btn primary" href="index.html#book">Book us</a>
+        <a class="btn" href="shows.html">See what's next</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <b>Knoxville Honkers and Bangers</b>
+      <p>Knoxville, Tennessee · the Scruffy City</p>
+    </div>
+    <p>Part of the worldwide HONK! street band movement.</p>
+  </div>
+</footer>
+
+<script src="past-shows-archive.js"></script>
+<script src="past-shows.js"></script>
+<script src="shows-snapshot.js"></script>
+<script src="calendar.js"></script>
+</body>
+</html>

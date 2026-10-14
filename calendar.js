@@ -317,6 +317,18 @@
       sub.hidden = !CONFIG.calendarId;
       if (CONFIG.calendarId) sub.href = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(CONFIG.calendarId);
     }
+
+    // Let other pages (Past Shows) use the same show list
+    try {
+      document.dispatchEvent(new CustomEvent('khb:shows', { detail: {
+        mode: mode,
+        past: past.map(function (s) {
+          var f = firstDay(s), l = lastDay(s);
+          var iso = function (p) { return p.y + '-' + (p.m < 10 ? '0' : '') + p.m + '-' + (p.d < 10 ? '0' : '') + p.d; };
+          return { date: iso(f), end: multiDay(s) ? iso(l) : '', title: s.title, place: placeText(s), map: mapUrl(s), note: '' };
+        })
+      } }));
+    } catch (e) { /* older browsers: Past Shows just shows the saved archive */ }
   }
 
   function load() {

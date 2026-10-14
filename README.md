@@ -9,6 +9,8 @@ Every change saved to the `main` branch goes live automatically through Cloudfla
 |---|---|
 | `index.html` | Home: hero, what's honk, next show, the band, join, book us |
 | `shows.html` | Shows: next show, coming up, past shows (filled in from the band calendar) |
+| `past-shows.html` | Past Shows: every show since 2023, by year, with a shows-per-year chart |
+| `past-shows-archive.js` | The list behind Past Shows. Edit it to fix a show or add one that was never on the calendar |
 | `gallery.html` | Photos & videos |
 | `mission.html` | Mission statement (**still a draft: rewrite it in the band's own words**) |
 | `links.html` | Link-in-bio page for Instagram (put `yoursite/links.html` in the bio) |
@@ -42,6 +44,11 @@ open a **Pull request** and merge it into `main`.
    `<img src="images/your-photo.jpg" alt="Short description of the photo">`.
 Keep photos under about 1 MB (shrink them first if they're straight off a phone).
 Short clips work the same way with `<video src="images/clip.mp4" controls playsinline></video>`.
+
+**Add or fix a past show**
+Open `past-shows-archive.js`, click the pencil, and copy one of the lines in the list.
+Change the date, title and place, then commit. New gigs that go on the band calendar show up
+on the Past Shows page by themselves once they're over, so this is only for fixes and old shows.
 
 ## Things still to fill in
 
