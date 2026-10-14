@@ -54,7 +54,8 @@ on the Past Shows page by themselves once they're over, so this is only for fixe
 
 - [ ] Band Instagram handle (search the files for `[YOUR INSTAGRAM HANDLE]`)
 - [ ] Real lineup on the Home page (the "Swap this for your real lineup" note in `index.html`)
-- [ ] Real photos and videos in the gallery
+- [ ] More photos: the SoKno Pride 2025 set by photographer Taryn Ferro (credit her on the Gallery page) and any video clips
+- [ ] Photo credits for the Band Camp 2024 photographer
 - [ ] Mission statement in the band's own words
 - [ ] Connect the live Google Calendar (below)
 
