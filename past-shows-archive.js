@@ -10,6 +10,9 @@
  *   end   = optional last day for multi-day events, e.g. end: '2025-06-15'
  *   place = venue or area people would recognize. Never put someone's home address here.
  *   note  = optional one-liner shown under the show
+ *   photo = optional group photo in this repo, e.g. photo: 'images/freedom-thighs-2026.jpg'.
+ *           Easier: put the photo in the band's Drive photo folder named with the gig's date first,
+ *           e.g. "2026-07-04 Freedom Thighs.jpg", and it shows up here by itself.
  * Order doesn't matter; the page sorts by date.
  */
 window.KHB_ARCHIVE = {
@@ -70,7 +73,7 @@ window.KHB_ARCHIVE = {
     { date: '2026-06-06', title: 'Sweetwater Pride', place: 'Duck Park, Sweetwater', note: '' },
     { date: '2026-06-11', end: '2026-06-14', title: 'Bonnaroo', place: 'Manchester, TN', note: '' },
     { date: '2026-06-20', title: 'SoKno Pride', place: 'Sevier Ave', note: '' },
-    { date: '2026-07-04', title: 'Freedom Thighs', place: 'Under the interstate, Washington Ave', note: '' },
+    { date: '2026-07-04', title: 'Freedom Thighs', place: 'Under the interstate, Washington Ave', note: '', photo: 'images/freedom-thighs-2026.jpg' },
     { date: '2026-07-11', title: 'KMA Puppet Parade', place: 'Knoxville Museum of Art', note: '' },
     { date: '2026-09-04', title: 'Dolly Parade', place: 'City County Building', note: '' },
     { date: '2026-09-07', title: 'Labor Day Picnic for United Campus Workers of TN', place: 'Tyson Park', note: '' },

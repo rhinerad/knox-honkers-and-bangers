@@ -7,11 +7,11 @@
 (function () {
   'use strict';
 
+  var SITE = (typeof window !== 'undefined' && window.KHB_CONFIG) || {};
   var CONFIG = {
-    // Public Google Calendar to read shows from, e.g. "abc123@group.calendar.google.com"
-    calendarId: '',
-    // Google API key with the Google Calendar API turned on (restrict it to your site's address)
-    apiKey: '',
+    // Set these in site-config.js (one place for the whole site)
+    calendarId: SITE.calendarId || '',
+    apiKey: SITE.apiKey || '',
     timeZone: 'America/New_York',
     // Events with any of these words in the title never appear on the site
     hideIfTitleHas: ['practice', 'rehearsal', 'sectional', 'meeting', 'band camp',

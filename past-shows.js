@@ -39,8 +39,28 @@
     main.append(el('h4', 'gig-title', s.title));
     if (s.place && s.place !== 'See it on the map') main.append(el('p', 'gig-where', s.place));
     if (s.note) main.append(el('p', 'gig-note', s.note));
-    li.append(date, main);
+    li.append(date, main, photoSlot(s));
     return li;
+  }
+
+  // Group photo for the gig: a local file named in the archive (photo: 'images/...'), or a photo in the
+  // band's Drive folder whose name starts with the gig's date (see photos.js). Otherwise an empty slot.
+  function photoSlot(s) {
+    var P = window.KHB_PHOTOS;
+    var photo = s.photo ? { src: s.photo, big: s.photo, alt: s.title } : (P ? P.forGig(s.date, s.end) : null);
+    if (!photo) {
+      var empty = el('div', 'gig-photo empty');
+      empty.setAttribute('aria-hidden', 'true');
+      return empty;
+    }
+    var a = el('a', 'gig-photo');
+    a.href = photo.big || photo.src; a.target = '_blank'; a.rel = 'noopener';
+    a.setAttribute('aria-label', 'Group photo: ' + s.title);
+    var img = el('img');
+    img.loading = 'lazy'; img.alt = 'The band at ' + s.title; img.width = 480; img.height = 320;
+    if (P && P.setSrc && !s.photo) P.setSrc(img, photo); else img.src = photo.src;
+    a.append(img);
+    return a;
   }
 
   function render() {
@@ -96,6 +116,7 @@
     }
   }
 
+  document.addEventListener('khb:photos', function () { render(); });
   document.addEventListener('khb:shows', function (e) {
     fromCalendar = (e.detail && e.detail.past) || [];
     render();
