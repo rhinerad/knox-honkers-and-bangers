@@ -1,5 +1,11 @@
 # Band Changes Log — a running, newest-first record of what bandmates change or ask to change on the website.
 
+## Wed Oct 21, 2026
+
+**Waiting on you:** nothing — no open pull requests.
+
+- **rhinerad** made the photo spots rotate automatically through photos in the band's Google Drive photo folder: the photo spots on the Home and Mission pages now cycle through those photos, and the Gallery gets a new "From the band's photo folder" section. On the Past Shows page every gig now has a photo slot, and a photo named with a gig's date (e.g. "2026-07-04 Freedom Thighs.jpg") shows up next to that gig. Until Google is connected, the spots rotate through the photos already on the site. Also small touches to the Shows and Links pages, a new settings file holding the Google key/calendar/folder IDs, layout additions in the shared colors/layout (styles.css), and README updates (Tue Oct 20, 5:57 PM). [Commit 05c9c41](https://github.com/rhinerad/knox-honkers-and-bangers/commit/05c9c41e4b9a5591afb9e1d7cb20a1f80a056480)
+
 ## Thu Oct 15, 2026
 
 **Waiting on you:** nothing — no open pull requests.
